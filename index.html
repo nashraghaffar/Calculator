@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input class="inputbar" id="result" type="text">
+        <div>
+            <button class="btn long clear" onclick="clearResult() " onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'"> C</button>
+            <button class="btn long opr" onclick="getNumber('/')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">/</button>
+        </div>
+
+        <div>
+            <button class="btn" onclick="getNumber('7')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">7</button>
+            <button class="btn" onclick="getNumber('8')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'"> 8</button>
+            <button class="btn" onclick="getNumber('9')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">9</button>
+            <button class="btn opr" onclick="getNumber('*')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">x</button>
+        </div>
+
+        <div>
+            <button class="btn" onclick="getNumber('4')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'"> 4</button>
+            <button class="btn" onclick="getNumber('5')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">5</button>
+            <button class="btn" onclick="getNumber('6')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'"> 6</button>
+            <button class="btn opr" onclick="getNumber('-')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">- </button>
+        </div>
+
+        <div>
+            <button class="btn" onclick="getNumber('1')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">1</button>
+            <button class="btn" onclick="getNumber('2')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">2</button>
+            <button class="btn" onclick="getNumber('3')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'"> 3</button>
+            <button class="btn opr" onclick="getNumber('+')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">+</button>
+        </div>
+
+        <div>
+            <button class="btn zero" onclick="getNumber('0')" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'">0</button>
+            <button class="btn long equal" onclick="getResult()" onfocus="this.style.backgroundColor='orange'" onblur="this.style.backgroundColor=' rgb(26, 24, 24)'"> =</button>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
